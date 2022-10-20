@@ -21,28 +21,30 @@ body {
 /* LAYOUT */
 header {
   position: relative;
-  height: 35vh;
-  border-bottom: 7px solid #eee;
+  text-align: center;
+  height: Min(20vw, 35rem);
+  border-bottom: 1vw solid #eee;
 }
 
 main {
-  height: 65vh;
   color: #eee;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  margin-top: 10vw;
 }
 
 .left {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: Center;
+  margin-right: 1px;
 }
 
 .right {
   width: 50%;
-  align-items: center;
+  text-align: left;
+  margin-left: 10px;
 }
 
 /* ELEMENTS STYLE */
@@ -63,9 +65,9 @@ h1 {
 .icon {
   background: #eee;
   color: #333;
-  font-size: 6rem;
-  width: 15rem;
-  padding: 3rem 0rem;
+  font-size: 4vw;
+  width: 10vw;
+  padding: 3vw 0rem;
   text-align: center;
   position: absolute;
   bottom: 0;
@@ -74,17 +76,18 @@ h1 {
 }
 
 .gameName {
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
   height: 3rem;
   font-size: Min(4vw, 3rem);
+  text-align: center;
 }
 
 .label-history {
   margin-bottom: 2rem;
-  font-size: Min(3vw, 1rem);
+  font-size: clamp(20%, 2vw, 2rem);
 }
 
 .gameimage {
-  width: 50%;
-  border: 7px solid #eee;
+  width: 70%;
+  border: 1vw solid #eee;
 }
