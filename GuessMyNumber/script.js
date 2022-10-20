@@ -5,6 +5,7 @@ let secretNumber = Math.trunc(Math.random() * 100) + 1;
 let score = 20;
 let highscore = 0;
 
+// Update the message to the user with a message.
 function userMessage(Message) {
   document.querySelector('.message').textContent = Message;
 }
@@ -12,7 +13,18 @@ function changeScore(Message) {
   document.querySelector('.score').textContent = Message;
 }
 
-document.querySelector('.check').addEventListener('click', function () {
+//Enter key and guess box is not empty - check the guess.
+document.addEventListener('keydown', function (event) {
+  if (
+    event.key === 'Enter' &&
+    Number(document.querySelector('.guess').value !== '')
+  ) {
+    checkGuess();
+  }
+});
+
+//Function to check the guess.
+const checkGuess = function () {
   //Fetch number/value from .guess
   const guess = Number(document.querySelector('.guess').value);
 
@@ -46,7 +58,9 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.highscore').textContent = `${score} (${name})`;
     }
   }
-});
+};
+
+document.querySelector('.check').addEventListener('click', checkGuess);
 
 document.querySelector('.again').addEventListener('click', function () {
   // Reset game
