@@ -2,12 +2,12 @@
   background-color: grey;
 }
 
-.selections {
+.user-selections {
   display: flex;
   justify-content: center;
 }
 
-.selection {
+.user-selection {
   background: none;
   border: none;
   outline: none;
@@ -16,7 +16,7 @@
   transition: 500ms;
 }
 
-.selection:hover {
+.user-selection:hover {
   transform: scale(1.2);
 }
 

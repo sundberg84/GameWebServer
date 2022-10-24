@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock, Paper or Scissors</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script scr="script.js" defer></script>
-  </head>
-  <body>
-    <div class="selections">
-      <button class="selection" data-selection="Rock">✊</button>
-      <button class="selection" data-selection="Paper">✋</button>
-      <button class="selection" data-selection="Scissor">✌️</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock, Paper or Scissors</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="user-selections">
+    <button class="user-selection" data-selection="Rock">✊</button>
+    <button class="user-selection" data-selection="Paper">✋</button>
+    <button class="user-selection" data-selection="Scissor">✌️</button>
+  </div>
+  <div class="results">
+    <div>
+      You
+      <span class="result-score">0</span>
     </div>
-    <div class="results">
-      <div>
-        You
-        <span class="result-score">0</span>
-      </div>
-      <div>
-        Computer
-        <span class="result-score">0</span>
-      </div>
-      <!--<div class="results-selection.winner">✋</div>
+    <div>
+      Computer
+      <span class="result-score">0</span>
+    </div>
+    <!--<div class="results-selection.winner">✋</div>
       <div class="results-selection">✊</div>-->
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>

@@ -1,11 +1,16 @@
 'use strict';
 //https://www.youtube.com/watch?v=1yS-JV4fWqY
 
-const selectionButtons = document.querySelectorAll('[data-selection]');
+//1. User trycker på knappen
 
-selectionButtons.forEach(selectionButtons => {
-  selectionButtons.addEventListener('click', e => {
-    const slectionName = selectionButtons.dataset.selection;
-    makeSelection(selectionButtons);
+const userPlaySelection = document.querySelectorAll('[data-selection]');
+console.log(userPlaySelection);
+console.log("tests");
+
+for (let i = 0; i < userPlaySelection.length; i++)
+  userPlaySelection[i].addEventListener('click', function () {
+    console.log("Button clicked")
   });
-});
+
+
+
