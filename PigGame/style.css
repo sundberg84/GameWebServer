@@ -123,7 +123,7 @@ main {
 }
 
 .btn::first-letter {
-  font-size: Min(2,2vw, 3,2rem);
+  font-size: Min(2, 2vw, 3, 2rem);
   display: inline-block;
   margin-right: 0.7rem;
 }
@@ -136,6 +136,11 @@ main {
 }
 .btn--hold {
   top: 85%;
+}
+
+.btn-back {
+  left: Max(40px, 7vw);
+  top: 2%;
 }
 
 .btn:active {
