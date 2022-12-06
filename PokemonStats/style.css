@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: solid red 1px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  color: #555;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  width: 320px;
+  border: solid blue 1px;
+  padding-top: 20px;
+}
