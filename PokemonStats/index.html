@@ -6,13 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-    <title>Pokemon Stats</title>
+    <title>Sundbergs Pokemon Stats</title>
   </head>
   <body>
     <main class="container">
-      <div class="main">Hello</div>
+      <div class="main">
+        <div class="pokemon__basic">Basic Pokemon</div>
+        <div class="pokemon__header">
+          <h3 class="pokemon__name">Charisard</h3>
+          <div class="pokemon__headsplit"></div>
+          <div class="pokemon__headsplit"></div>
+          <h3 class="pokemon__hp">120 HP<p class="pokemon_type">[Fairy]</p></h3>
+        </div>
 
-      <div class="images"></div>
+        <img
+          class="pokemon_img"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"
+        />
+        <h5 class="pokemon__stats">Egg pokemon. Length: 24cm, Wighth 78lbs</h5>
+
+        <div class="pokemon__moves">
+          <div class="pokemon__row">
+            <div class="move__icon">🔥</div>
+            <p class="move__text">
+              <b>Scrunch </b>Inflicts regular damage with no additional effect.
+            </p>
+            <div class="move__dmg">60!</div>
+          </div>
+          <div class="pokemon__row">
+            <div class="move__icon">🔥</div>
+            <p class="move__text">
+              <b>Scrunch </b>Inflicts regular damage with no additional effect.
+            </p>
+            <div class="move__dmg">80!</div>
+          </div>
+        </div>
+        <div class="pokemon__bar">
+            <div class="pokemon__weak"><h6>weakness</h6><p class="p__weak">30</p></div>
+            <div class="pokemon__res"><h6>recistance</h6><p class="p__res">30</p></div>
+            <div class="pokemon__retreat"><h6>retreat</h6><p class="p__retreat">30</p></div>
+          </div>
+
+        </div>
+      </div>
     </main>
   </body>
 </html>
+
