@@ -10,7 +10,14 @@
   </head>
   <body>
     <main class="container">
-      <div class="main">
+      <div class="search">
+        <p><h3>Find your favourite pokemon!</h3></p>
+        <input type="text" placeholder="Search.." class="searchTxt">
+        <button type="button" class="button go"> GO </button>
+        <button type="button" class="button rnd">Look for random Pokemon</button>
+      </div>
+
+      <div class="main hidden">
         <div class="pokemon__basic">Basic Pokemon</div>
         <div class="pokemon__header">
           <h3 class="pokemon__name">Charisard</h3>
@@ -27,24 +34,24 @@
 
         <div class="pokemon__moves">
           <div class="pokemon__row">
-            <div class="move__icon">🔥</div>
-            <p class="move__text">
+            <div class="move__icon" id="attPP1"></div>
+            <p class="move__text" id="attr1">
               <b>Scrunch </b>Inflicts regular damage with no additional effect.
             </p>
-            <div class="move__dmg">60!</div>
+            <div class="move__dmg" id="attr1dmg">60!</div>
           </div>
           <div class="pokemon__row">
-            <div class="move__icon">🔥</div>
-            <p class="move__text">
+            <div class="move__icon"  id="attPP2"></div>
+            <p class="move__text" id="attr2">
               <b>Scrunch </b>Inflicts regular damage with no additional effect.
             </p>
-            <div class="move__dmg">80!</div>
+            <div class="move__dmg" id="attr2dmg">80!</div>
           </div>
         </div>
         <div class="pokemon__bar">
             <div class="pokemon__weak"><h6>weakness</h6><p class="p__weak">30</p></div>
-            <div class="pokemon__res"><h6>recistance</h6><p class="p__res">30</p></div>
-            <div class="pokemon__retreat"><h6>retreat</h6><p class="p__retreat">30</p></div>
+            <div class="pokemon__res"><h6>recistance</h6><p class="p__res"></p></div>
+            <div class="pokemon__retreat"><h6>retreat</h6><p class="p__retreat">⚙️</p></div>
           </div>
 
         </div>
